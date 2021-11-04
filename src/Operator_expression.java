@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class operator_expression {
+public class Operator_expression {
     public static void main(String[] args) {
         float width;
         float height;
