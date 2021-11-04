@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class BMI {
@@ -8,6 +9,9 @@ public class BMI {
         double BMI;
 
         Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.ENGLISH);
+        scanner.locale();
+        System.out.println(""+ scanner.locale());
 
 
         System.out.println("Nhap so tuoi cua ban");
@@ -24,12 +28,12 @@ public class BMI {
             System.out.println("Nhap chieu cao: ");
             height = scanner.nextDouble(); // nhap chieu cao he so cm22;
 
-            BMI = weight / Math.pow(height,2) *10000;
+            BMI = weight / Math.pow(height,2) ;
             if (BMI < 18.5) {
                 System.out.println("Nghien!");
-            } else if (BMI >= 18.5 && BMI <=25.0) {
+            } else if ( BMI <=25.0) {
                 System.out.println("Normal");
-            } else if (BMI >= 25.0 && BMI <= 30.0) {
+            } else if ( BMI <= 30.0) {
                 System.out.printf("%-20.2f%s", BMI, "Overweight");
             } else {
                 System.out.println("Obese");
