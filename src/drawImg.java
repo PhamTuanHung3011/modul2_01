@@ -43,7 +43,7 @@ public class drawImg {
                 System.out.println("Nhap chieu cao cua tam giac");
                 int numberOne, k = 0;
                 numberOne = input.nextInt();
-                for (int i = 1; i < numberOne; i++, k=0 ) {
+                for (int i = 1; i < numberOne; ++i, k=0 ) {
                         for (int j = 1; j < numberOne -1 ; ++j) {
                             System.out.print(" ");
                         }
