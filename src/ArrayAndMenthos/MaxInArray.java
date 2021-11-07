@@ -29,15 +29,31 @@ public class MaxInArray {
         for (int j = 0; j < array.length; j++) {
             System.out.print(array[j] + "\t");
         }
+        System.out.println("-----------------");
         int max = array[0];
+        int min = array[0];
         int index = 1;
+        int index1 = 1;
         for (int j = 0; j < array.length; j++) {
             if (array[j] > max) {
                 max = array[j];
                 index = j + 1;
             }
+            if (array[j] < min) {
+                min = array[j];
+                index1 = j + 1;
+            }
+
         }
+//        for (int j = 0; j < array.length; j++) {
+//            if (array[j] < min) {
+//                min = array[j];
+//                index1 = j + 1;
+//            }
+//        }
+
         System.out.println("Gia tri lon nhat trong mang: "+ max+ " o vi tri "+ index);
+        System.out.println("Gia tri nho nhat trong mang: "+ min+ " o vi tri "+ index1);
 
     }
 }
