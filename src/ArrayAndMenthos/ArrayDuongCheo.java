@@ -41,7 +41,6 @@ public class ArrayDuongCheo {
                 }
 
             }
-
         }
         System.out.println(sum);
     }
