@@ -48,6 +48,6 @@ public class sumInMatrixArray {
             }
 
 
-        System.out.println("tong cot la" + sum);
+        System.out.println("tong cot " + number +" la: " + sum);
     }
 }
