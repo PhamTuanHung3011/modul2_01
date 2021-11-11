@@ -22,14 +22,7 @@ public class Spuare extends Rectangle {
         setLength(side);
     }
 
-//    @Override
-//    public void setWidth( double width) {
-//        setSide(width);
-//    }
-//    @Override
-//    public void setLength (double length) {
-//        setSide(length);
-//    }
+
     @Override
     public String toString() {
         return "A Spuare with size=" + getSide() + ", which is a subclass of "+ super.toString();
