@@ -1,4 +1,4 @@
-package hedoituonghinhhoc;
+package shape;
 
 public class Shape_class {
     private String color = "green";

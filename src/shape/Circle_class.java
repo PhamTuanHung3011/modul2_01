@@ -1,4 +1,4 @@
-package hedoituonghinhhoc;
+package shape;
 
 public class Circle_class extends Shape_class {
 

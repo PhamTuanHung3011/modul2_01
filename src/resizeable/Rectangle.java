@@ -1,6 +1,6 @@
-package hedoituonghinhhoc;
+package resizeable;
 
-public class Rectangle extends Shape_class {
+public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -35,20 +35,26 @@ public class Rectangle extends Shape_class {
     }
 
     public double getArea() {
-        return getWidth()* getLength();
+        return width * this.length;
     }
 
     public double getPerimeter() {
-        return (getWidth() + getLength()) * 2;
+        return 2 * (width + this.length);
     }
 
     @Override
     public String toString() {
-        return "Rectangle{" +
-                "width=" + getWidth() +
-                ", length=" + getLength() +", which is a subclass of " + super.toString() +
-                '}';
+        return "A Rectangle with width="
+                + getWidth()
+                + " and length="
+                + getLength()
+                + ", which is a subclass of "
+                + super.toString();
+    }
+
+    @Override
+    public void resizeable(double heso) {
+
     }
 
 }
-

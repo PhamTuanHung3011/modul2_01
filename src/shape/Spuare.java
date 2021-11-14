@@ -1,4 +1,4 @@
-package hedoituonghinhhoc;
+package shape;
 
 public class Spuare extends Rectangle {
 
