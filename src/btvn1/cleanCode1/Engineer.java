@@ -1,13 +1,12 @@
 package btvn1.cleanCode1;
 
-public class engineer extends staff {
+public class Engineer extends Staff {
     private double payRateSalary;
 
-    public engineer() {
-    }
 
-    public engineer(int id, String name, int age, String address, double salary, double work_day, double payRateSalary) {
-        super(id, name, age, address, salary, work_day);
+
+    public Engineer(String name, int age, String address, double salary, double work_day, double payRateSalary) {
+        super(name, age, address, salary, work_day);
         this.payRateSalary = payRateSalary;
     }
 

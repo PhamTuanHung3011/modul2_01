@@ -2,7 +2,7 @@ package btvn1.cleanCode1;
 
 import java.util.Scanner;
 
-public class staff_main {
+public class Staff_main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -24,11 +24,11 @@ public class staff_main {
                     choice = Integer.parseInt(scanner.nextLine());
                     switch (choice) {
                         case 1:
-                            staff Work = Control.createStaff(false);
+                            Staff Work = Control.createStaff(false);
                             Control.addStaff(Work);
                             break;
                         case 2:
-                            staff Engineers = Control.createStaff(true);
+                            Staff Engineers = Control.createStaff(true);
                             Control.addStaff(Engineers);
                             break;
                         default:
@@ -38,8 +38,11 @@ public class staff_main {
 
                 case 2: Control.search();
                     break;
-                case 3:Control.deleteStaff(Control.staffs);
+                case 3:Control.staffs =Control.deleteStaff(Control.staffs);
+                Control.showStaff();
                 break;
+                case 4:Control.staffs = Control.upDateStaff(Control.staffs);
+                Control.show();
                 case 5: Control.showStaff();
 
             }

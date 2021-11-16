@@ -1,6 +1,6 @@
 package btvn1.cleanCode1;
 
-public abstract class staff {
+public abstract class Staff {
     private int id;
     private String name;
     private int age;
@@ -10,10 +10,12 @@ public abstract class staff {
     static int idnumber = 1;
 
 
-    public staff() {
+    public Staff() {
     }
 
-    public staff(int id, String name, int age, String address, double salary, double work_day) {
+
+
+    public Staff(String name, int age, String address, double salary, double work_day) {
         this.id = idnumber++;
         this.name = name;
         this.age = age;
@@ -75,7 +77,7 @@ public abstract class staff {
     }
 
     public static void setIdnumber(int idnumber) {
-        staff.idnumber = idnumber;
+        Staff.idnumber = idnumber;
     }
 
     public abstract double getSumSalary();
