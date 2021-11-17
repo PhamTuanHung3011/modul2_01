@@ -110,24 +110,27 @@ public class Control {
         for (int i = 0; i < updateStaff.length; i++) {
             if (i == index) {
                 updateSupport(updateStaff[i]);
+                break;
             }
         }
 
         return updateStaff;
     }
     public static Staff updateSupport(Staff staff) {
+        System.out.println("1. Sua thong tin nhan vien");
+
         int so = 1;
         while (so!=0){
+            so = scanner.nextInt();
             System.out.println("1. Sua ten");
             System.out.println("2. Sua tuoi");
             System.out.println("3. Sua dia chi");
             System.out.println("4. Sua ngay cong");
             System.out.println("5. muc luong");
             System.out.println("0. Exit");
-            so = scanner.nextInt();
+
             int choise = scanner.nextInt();
             switch (choise) {
-
                 case 1:
                     System.out.println("Nhap ten nhan vien muon sua");
                     scanner.nextLine();
@@ -153,6 +156,7 @@ public class Control {
                     break;
                 default:
                     System.out.println("Moi ban nhap lai");
+                    break;
             }
         }
         return staff;

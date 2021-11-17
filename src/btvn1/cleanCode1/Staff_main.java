@@ -43,7 +43,9 @@ public class Staff_main {
                 break;
                 case 4:Control.staffs = Control.upDateStaff(Control.staffs);
                 Control.show();
+                break;
                 case 5: Control.showStaff();
+                break;
 
             }
         }
